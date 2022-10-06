@@ -12,7 +12,7 @@ int _strlen(char *str)
 	int i;
 
 	for(i = 0; str[i]; i++)
-		;
+	  ;
 
 	return (i);
 }
@@ -25,12 +25,12 @@ int _strlen(char *str)
  */
 int main(int argc, char *argv[])
 {
-	unsigned long int a, b, res; 
+  unsigned long int num1, num2, res; 
 	
-	int len_a, len_b;
+	int len_num1, len_num2;
 
-	len_a = _strlen(argv[1]);
-	len_b = _strlen(argv[2]);
+	len_num1 = _strlen(argv[1]);
+	len_num2 = _strlen(argv[2]);
 
 	for (i = 0; i < )
 
@@ -39,9 +39,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (98);
 	}
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
 
-	res = mul(a, b);
+	res = mul(num1, num2);
 	printf("%d", res);
 }
